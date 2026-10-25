@@ -1,0 +1,121 @@
+{
+  "sites": [
+    {
+      "key": "xjz4k",
+      "name": "小金子4K",
+      "type": 3,
+      "api": "http://xhztv.top/4k.json",
+      "ext": "http://xhztv.top/4k.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "wang2",
+      "name": "王二小",
+      "type": 3,
+      "api": "https://9280.kstore.vip/newex.json",
+      "ext": "https://9280.kstore.vip/newex.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "jihulaoer",
+      "name": "少儿频道",
+      "type": 3,
+      "api": "https://jihulab.com/ymz1231/xyzmz/-/raw/main/yushaoer",
+      "ext": "https://jihulab.com/ymz1231/xyzmz/-/raw/main/yushaoer",
+      "playUrl": "",
+      "category": "少儿"
+    },
+    {
+      "key": "feb",
+      "name": "二月红接口",
+      "type": 3,
+      "api": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+      "ext": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "ysck",
+      "name": "影视仓",
+      "type": 3,
+      "api": "http://影视仓.com/",
+      "ext": "http://影视仓.com/",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "junge",
+      "name": "俊哥接口",
+      "type": 3,
+      "api": "http://home-jundie.top:81/top98.json",
+      "ext": "http://home-jundie.top:81/top98.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "w2xbox",
+      "name": "王二小接口",
+      "type": 3,
+      "api": "http://tvbox.xn--4kq6z2qypq9ub.top/",
+      "ext": "http://tvbox.xn--4kq6z2qypq9ub.top/",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "w2xfz",
+      "name": "王二小放牛娃",
+      "type": 3,
+      "api": "http://tv.999888987.xyz",
+      "ext": "http://tv.999888987.xyz",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "fty",
+      "name": "饭太硬",
+      "type": 3,
+      "api": "https://qist.wyfc.qzz.io/fty.json",
+      "ext": "https://qist.wyfc.qzz.io/fty.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "baox",
+      "name": "宝盒接口",
+      "type": 3,
+      "api": "http://宝盒接口.top",
+      "ext": "http://宝盒接口.top",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "xiaosa",
+      "name": "潇酒",
+      "type": 3,
+      "api": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+      "ext": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "niu2",
+      "name": "牛二",
+      "type": 3,
+      "api": "https://9280.kstore.space/newex.json",
+      "ext": "https://9280.kstore.space/newex.json",
+      "playUrl": "",
+      "category": "影视"
+    },
+    {
+      "key": "uucc",
+      "name": "uucc",
+      "type": 3,
+      "api": "http://xn--5mqx81b535a.com/",
+      "ext": "http://xn--5mqx81b535a.com/",
+      "playUrl": "",
+      "category": "影视"
+    }
+  ]
+}

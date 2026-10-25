@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我的多线路订阅</title>
+<style>
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    max-width:720px;margin:40px auto;padding:0 16px;background:#0f1420;color:#e8ecf3}
+  h1{font-size:22px;margin-bottom:6px}
+  .tip{color:#8b97ad;font-size:13px;margin-bottom:24px;line-height:1.7}
+  .card{background:#1a2130;border:1px solid #2a3346;border-radius:14px;padding:18px;margin-bottom:14px}
+  .card h3{margin:0 0 8px;font-size:16px}
+  .card p{margin:0;font-size:13px;color:#8b97ad;word-break:break-all}
+  .btn{display:inline-block;margin-top:12px;padding:9px 18px;border-radius:10px;
+    background:#3b82f6;color:#fff;text-decoration:none;font-size:14px;cursor:pointer;border:none}
+  code{background:#0b0f18;padding:2px 6px;border-radius:6px;font-size:12px}
+</style>
+</head>
+<body>
+<h1>📺 多线路订阅</h1>
+<p class="tip">
+  TVBox / 影视仓 / 猫影视 通用：把下面「订阅链接」填到 <code>设置 → 配置地址 / 订阅管理</code> 里，
+  保存后首页会出现线路切换按钮，13 条线路自由切换。<br>
+  更新线路时只改 <code>sources.json</code>，播放器那边不用动。
+</p>
+
+<div class="card">
+  <h3>🔗 订阅链接（填这个）</h3>
+  <p id="sub">加载中…</p>
+  <button class="btn" id="btn" style="display:none">复制订阅链接</button>
+</div>
+
+<div class="card">
+  <h3>📦 聚合源清单（<span id="cnt">0</span> 条线路）</h3>
+  <p id="list">加载中…</p>
+</div>
+
+<script>
+  const BASE = location.href.replace(/\/index\.html$/, '');
+  const SUB  = BASE + '/sources.json';
+  document.getElementById('sub').textContent = SUB;
+  const b = document.getElementById('btn');
+  b.style.display = 'inline-block';
+  b.onclick = e => {
+    navigator.clipboard.writeText(SUB)
+      .then(() => { b.textContent = '✅ 已复制'; setTimeout(()=>b.textContent='复制订阅链接',1500); })
+      .catch(() => { prompt('手动复制：', SUB); });
+  };
+
+  fetch('sources.json').then(r=>r.json()).then(d=>{
+    document.getElementById('cnt').textContent = d.sites.length;
+    document.getElementById('list').innerHTML = d.sites.map(s =>
+      `<code>${s.name}</code> · ${s.category}<br>`).join('');
+  });
+</script>
+</body>
+</html>
