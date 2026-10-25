@@ -49,9 +49,10 @@
   };
 
   fetch('sources.json').then(r=>r.json()).then(d=>{
-    document.getElementById('cnt').textContent = d.sites.length;
-    document.getElementById('list').innerHTML = d.sites.map(s =>
-      `<code>${s.name}</code> · ${s.category}<br>`).join('');
+   const list = d.urls || [];
+document.getElementById('cnt').textContent = list.length;
+document.getElementById('list').innerHTML = list.map(s =>
+  `<code>${s.name}</code><br>`).join('');
   });
 </script>
 </body>
